@@ -1,1 +1,20 @@
+import javax.swing.*;
 
+public class Login extends JFrame{
+    Login(){
+        super("Bank Management System");
+
+        ImageIcon i1 =new ImageIcon(ClassLoader.getSystemResource("icons/bank.png"));
+        Image i2= i1.getImage().getScaledInstance(100, 100, DO_NOTHING_ON_CLOSE);
+        ImageIcon i3 = new ImageIcon(i2);
+        JLabel = new JLabel(i3);
+        Image.setBound(350,10,100,100);
+
+        setSize(850, 480);
+        setVisible(true);
+        setLocation(450, 2);
+    }
+    public static void main(String[] args) {
+        new Login();
+    }
+}
